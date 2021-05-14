@@ -14,6 +14,7 @@ const WeatherSearchForm = () => {
             onChange={(event) => setLocation(event.target.value)}
           />
         </label>
+        <br/>
         <label htmlFor="openweather-api-key">
           OpenWeather API Key
           <input
@@ -23,6 +24,9 @@ const WeatherSearchForm = () => {
           />
         </label>
       </form>
+      <br/>
+      {location} <br/>
+      {openWeatherApiKey}
     </div>
   )
 }
